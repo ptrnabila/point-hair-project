@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sertifikat Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: url(bila.jpg) no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 1rem 2rem;
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    nav ul li {
+      font-size: 1.1rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: orange;
+    }
+
+    .nav-underline {
+      height: 4px;
+      background-color: orange;
+    }
+
+    .content {
+      padding: 2rem;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .content h1 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .row {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .row img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .row img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(255, 165, 0, 0.7);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .row img {
+        width: 100%;
+        max-width: 90%;
+      }
+
+      nav {
+        justify-content: center;
+      }
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="nabila1.html">Home</a></li>
+      <li><a href="nabila2.html">About</a></li>
+      <li><a href="nabila3.html">Experience</a></li>
+      <li><a href="nabila4.html">Skill</a></li>
+      <li><a href="nabila5.html">Certificate</a></li>
+      <li><a href="nabila6.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="nav-underline"></div>
+
+  <div class="content">
+    <h1>Certificate Gallery</h1>
+
+    <div class="row">
+      <img src="s1.PNG" alt="Certificate 1">
+      <img src="s4.PNG" alt="Certificate 2">
+      <img src="s5.PNG" alt="Certificate 3">
+    </div>
+
+    <div class="row">
+      <img src="s8.PNG" alt="Certificate 4">
+      <img src="s9.PNG" alt="Certificate 5">
+      <img src="S6.PNG" alt="Certificate 6">
+    </div>
+  </div>
+</body>
+</html>

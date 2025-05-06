@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yanuar Aan - Web Developer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body, html {
+      height: 100%;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: flex-end; /* Align navbar items to the right */
+      background-color: #222;
+      padding: 1rem 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+    }
+
+    .nav-links {
+      display: flex;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 14px;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: orange;
+    }
+
+    .orange-line {
+      height: 7px;
+      background-color: orange;
+      margin-top: 45px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero {
+      position: relative;
+      background-image: url(yanuar.jpeg); /* Gambar latar belakang */
+      background-size: cover; /* Membuat gambar menutupi seluruh area */
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh; /* Membuat tinggi hero area 100% dari viewport */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: left;
+      padding: 0 20px;
+      color: white;
+      margin-top: 0px; /* Menambahkan margin untuk menghindari navbar menutupi konten */
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+
+    .hero-text {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-text h3,
+    .hero-text h1,
+    .hero-text h4 {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    .hero-text h3 {
+      font-size: 75px;
+      font-weight: normal;
+      animation-delay: 0.3s;
+    }
+
+    .hero-text h1 {
+      font-size: 100px;
+      color: orange;
+      animation-delay: 0.6s;
+    }
+
+    .hero-text h4 {
+      font-size: 55px;
+      margin-top: 10px;
+      font-weight: normal;
+      animation-delay: 0.9s;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        flex-direction: column;
+      }
+
+      .nav-links a {
+        margin: 10px 0;
+      }
+
+      .hero-text h1 {
+        font-size: 36px;
+      }
+
+      .hero-text h3, .hero-text h4 {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="nav-links">
+        <a href="aan1.html">Home</a>
+        <a href="aan2.html">About</a>
+        <a href="aan3.html">Experience</a>
+        <a href="aan4.html">Skill</a>
+        <a href="aan5.html">Certificate</a>
+        <a href="aan6.html">Contact</a>
+      </div>
+    </nav>
+    <div class="orange-line"></div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h3>Hello Everyone</h3>
+      <h1>I am <span>Yanuar Aan</span></h1>
+      <h4>I’m Web Developer</h4>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hair Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <img src="c:\Users\WINDOWS 10\Downloads\phr-removebg-preview.png" alt="Logo" style="width: 40px; height: 40px; border-radius: 50%;" />
+      <h1>Point Hair Project</h1>
+    </div>
+    <ul>
+      <li><a href="#" onclick="showTab('home')">Home</a></li>
+      <li><a href="#" onclick="showTab('type')">Type & Price</a></li>
+      <li><a href="#" onclick="showTab('order')">Pemesanan</a></li>
+      <li><a href="#" onclick="showTab('profile')">Profile</a></li>
+      <li><a href="#" onclick="showTab('gallery')">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="container tab active">
+    <div class="owner-card">
+      <img src="c:\Users\WINDOWS 10\Pictures\masku.jpg" alt="Owner">
+      <div>
+        <h2>Rendy Unggul Setiawan</h2>
+        <p>30 Tahun</p>
+        <p>"Kita tidak pernah meragukan pelanggan meski permintaannya aneh-aneh"</p>
+        <p>Jl. Sulaiman RT.02/RW.04, Nglegok, Kabupaten Blitar</p>
+        <a class="btn" href="https://wa.me/6282132946695" target="_blank">Chat WhatsApp</a>
+        <a class="btn" href="https://maps.app.goo.gl/DUgCXLQQLfKLUFxq5" target="_blank">Lihat di Maps</a>
+      </div>
+    </div>
+    <h2 id="animated-text" style="margin-top: 30px; font-size: 1.5rem; text-align:center;"></h2>
+  </section>
+
+  <section id="type" class="container tab">
+    <h2 style="color:#f86d1c; margin-bottom: 20px;">Type & Price</h2>
+    <div class="price-category">
+      <h3>Haircut</h3>
+      <div class="grid">
+        <div class="card"><img src="c:\Users\WINDOWS 10\Pictures\w1.jpg"><p>Classic Fade</p></div>
+        <div class="card"><img src="c:\Users\WINDOWS 10\Pictures\w4.jpg"><p>High Fade</p></div>
+        <div class="card"><img src="c:\Users\WINDOWS 10\Pictures\w2.jpg"><p>Low Fade</p></div>
+        <div class="card"><img src="c:\Users\WINDOWS 10\Pictures\w3.jpg"><p>Taper Fade</p></div>
+        <div class="card"><img src="c:\Users\WINDOWS 10\Pictures\w5.jpg"><p>Mid Fade</p></div>
+        <div class="card"><img src="c:\Users\WINDOWS 10\Pictures\w6.jpg"><p>Scissor Fade</p></div>
+      </div>
+
+      <div class="price-category">
+        <h3>Point Cuts</h3>
+        <ul>
+          <li><span>Regular Haircuts</span><span>Rp15.000</span></li>
+          <li><span>Premium Haircuts</span><span>Rp20.000</span></li>
+          <li><span>Shaving</span><span>Rp5.000</span></li>
+          <li><span>Hair Treatment Cowok</span><span>Rp7.000</span></li>
+          <li><span>Hair Treatment Cewek</span><span>Rp20.000</span></li>
+        </ul>
+      </div>
+      <div class="price-category">
+        <h3>Colouring</h3>
+        <ul>
+          <li><span>Highlight</span><span>Rp150.000</span></li>
+          <li><span>Full Color</span><span>Rp200.000</span></li>
+          <li><span>Natural</span><span>Rp30.000 - 50.000</span></li>
+          <li><span>Color Fashion</span><span>Rp100.000 - 140.000</span></li>
+          <li><span>Bleaching</span><span>Rp50.000 - 80.000</span></li>
+          <li><span>Hairlight</span><span>Rp85.000 - 100.000</span></li>
+        </ul>
+      </div>
+      <div class="price-category">
+        <h3>Conditioning</h3>
+        <ul>
+          <li><span>Aromatic Creambath Cowok</span><span>Rp50.000</span></li>
+          <li><span>Aromatic Creambath Cewek</span><span>Rp65.000 - 80.000</span></li>
+          <li><span>Smoothing</span><span>Rp50.000</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="order" class="container tab">
+    <h2>Form Pemesanan</h2>
+    <form class="form">
+      <input type="text" placeholder="Nama Lengkap" required />
+      <input type="tel" placeholder="Nomor HP" required />
+      <select required>
+        <option value="">Pilih Gaya Rambut</option>
+        <option>Classic Fade</option>
+        <option>High Fade</option>
+        <option>Low Fade</option>
+        <option>Taper Fade</option>
+        <option>Mid Fade</option>
+        <option>Scissor Fade</option>
+      </select>
+      <select required>
+        <option value="">Pilih Kelas Murah</option>
+        <option>Regular Haircut</option>
+        <option>Shaving</option>
+        <option>Hairwash Cowok</option>
+      </select>
+      <select required>
+        <option value="">Pilih Kelas Sedang</option>
+        <option>Hair Treatment Cewek</option>
+        <option>Bleaching</option>
+        <option>Hairlight</option>
+      </select>
+      <select required>
+        <option value="">Pilih Kelas Mahal</option>
+        <option>Color Fashion</option>
+        <option>Aromatic Creambath Cewek</option>
+        <option>Smoothing</option>
+      </select>
+      <input type="datetime-local" required />
+      <textarea placeholder="Catatan Tambahan"></textarea>
+      <button type="submit">Kirim Pesan Layanan</button>
+    </form>
+    <h3>Beri Rating</h3>
+    <div class="rating" id="rating">
+      <span data-value="1">☆</span>
+      <span data-value="2">☆</span>
+      <span data-value="3">☆</span>
+      <span data-value="4">☆</span>
+      <span data-value="5">☆</span>
+    </div>
+  </section>
+
+  <section id="profile" class="container tab">
+    <h2 style="color: #f86d1c; margin-bottom: 20px;">Tim Pembuat Website</h2>
+    <div class="grid">
+      <a href="damar1.html" target="_blank" style="text-decoration: none; color: inherit;">
+        <div class="card">
+          <img src="c:\Users\WINDOWS 10\Pictures\damar.jpg" alt="Damar">
+          <p>Damar - Home Profile Owner</p>
+        </div>
+      </a>
+      <a href="nabila1.html" target="_blank" style="text-decoration: none; color: inherit;">
+        <div class="card">
+          <img src="c:\Users\WINDOWS 10\Pictures\nabila.jpg" alt="Nabila">
+          <p>Nabila - WA & Maps</p>
+        </div>
+      </a>
+      <a href="sely1.html" target="_blank" style="text-decoration: none; color: inherit;">
+        <div class="card">
+          <img src="c:\Users\WINDOWS 10\Pictures\sely.jpg" alt="Sely">
+          <p>Sely - Type</p>
+        </div>
+      </a>
+      <a href="sabrina1.html" target="_blank" style="text-decoration: none; color: inherit;">
+        <div class="card">
+          <img src="c:\Users\WINDOWS 10\Pictures\sabrina.jpg" alt="Shabriena">
+          <p>Shabriena - Profile Tim</p>
+        </div>
+      </a>
+      <a href="yanti1.html" target="_blank" style="text-decoration: none; color: inherit;">
+        <div class="card">
+          <img src="c:\Users\WINDOWS 10\Pictures\yanti.jpg" alt="Yanti">
+          <p>Yanti - Pemesanan</p>
+        </div>
+      </a>
+      <a href="aan1.html" target="_blank" style="text-decoration: none; color: inherit;">
+        <div class="card">
+          <img src="c:\Users\WINDOWS 10\Pictures\aan.jpg" alt="Yanuar">
+          <p>Yanuar - Rating</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section id="gallery" class="container tab">
+    <div class="row">
+      <img src="d1.jpg" alt="Certificate 1">
+      <img src="d2.jpg" alt="Certificate 2">
+      <img src="d3.jpg" alt="Certificate 3">
+    </div>
+
+    <div class="row">
+      <img src="d4.jpg" alt="Certificate 4">
+      <img src="d5.jpg" alt="Certificate 5">
+      <img src="d6.jpg" alt="Certificate 6">
+    </div>
+
+    <div class="row">
+      <img src="d7.jpg" alt="Certificate 4">
+      <img src="d8.jpg" alt="Certificate 5">
+      <img src="d9.jpg" alt="Certificate 6">
+    </div>
+      
+  </section>
+
+  <footer style="background-color: #111; color: #fff; padding: 30px 20px; text-align: center;">
+    <h2 style="color: #f86d1c; margin-bottom: 20px;">Hubungi Kami</h2>
+  
+    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;">
+  
+      <div style="min-width: 200px;">
+        <a href="tel:082177332015" style="text-decoration: none; color: #fff;">
+          <i class="fas fa-phone" style="margin-right: 8px; color: #f86d1c;"></i>0821 3294 6695
+        </a>
+      </div>
+  
+      <div style="min-width: 200px;">
+        <a href="https://wa.me/6282132946695" target="_blank" style="text-decoration: none; color: #fff;">
+          <i class="fab fa-whatsapp" style="margin-right: 8px; color: #f86d1c;"></i>WhatsApp
+        </a>
+      </div>
+  
+      <div style="min-width: 200px;">
+        <a href="https://www.instagram.com/point.hairproject?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" style="text-decoration: none; color: #fff;">
+          <i class="fab fa-instagram" style="margin-right: 8px; color: #f86d1c;"></i>@point.hairproject
+        </a>
+      </div>
+  
+    </div>
+  
+    <p style="margin-top: 30px; color: #888;">&copy; 2025 Point Hair Project. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Sely</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      background: url(selyy.jpg) no-repeat center center/cover;
+      position: relative;
+      color: white;
+    }
+
+    /* Overlay untuk meredupkan background */
+    .overlay::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* 0.5 = tingkat kegelapan */
+      z-index: 0;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 15px 20px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 2;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: orange;
+    }
+
+    .orange-line {
+      height: 4px;
+      background-color: orange;
+      margin-top: 45px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .container {
+      padding: 100px 20px 40px;
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .profile-img {
+      width: 200px;
+      border-radius: 50%;
+      border: 3px solid white;
+    }
+
+    .text-content {
+      flex: 1;
+    }
+
+    h1 {
+      font-size: 50px;
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    h1 span {
+      color: orange;
+    }
+
+    p {
+      font-size: 25px;
+      line-height: 1.6;
+      text-align: justify;
+
+      /* Animasi teks */
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeSlideUp 1s ease-out forwards;
+      animation-delay: 0.5s;
+    }
+
+    @keyframes fadeSlideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .text-content {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <nav>
+      <ul>
+        <li><a href="sely1.html">Home</a></li>
+        <li><a href="sely2.html">About</a></li>
+        <li><a href="sely3.html">Experience</a></li>
+        <li><a href="sely4.html">Skill</a></li>
+        <li><a href="sely5.html">Certificate</a></li>
+        <li><a href="sely6.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="orange-line"></div>
+
+    <div class="container">
+      <img src="sely.jpg" alt="Foto Nabila" class="profile-img">
+      <div class="text-content">
+        <h1>Hi, I am <span>Sely</span></h1>
+        <p>
+          Siswi SMKN 1 NGLEGOK saya mengambil jurusan TKJ (Teknik Komputer Jaringan). Semangat belajar, tertarik pada dunia teknologi, terutama jaringan dan komputer.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
